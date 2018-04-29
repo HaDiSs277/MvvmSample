@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="project" type="service.repository.Repo"/>
+        <variable name="callback" type="view.callback.OnItemClickCallBack"/>
+    </data>
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Base.TextAppearance.AppCompat.Medium"-->
+        <!--android:id="@+id/txtCategory"-->
+        <!--android:gravity="start|center_vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--/>-->
+        <!--android:text="@{project.jokeCategory}"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDetails"
+        android:gravity="start|center_vertical"
+        android:text="@{project.details}"
+        />
+
+</LinearLayout>
+    </layout>
